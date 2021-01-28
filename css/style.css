@@ -267,6 +267,8 @@ p {
 
 .centre .btn--dark { 
     padding: 1.2rem 5.13rem;
+
+    font-size: .75rem;
 }
 
 .btn:focus {
@@ -1321,7 +1323,52 @@ p {
     /* NAV */
 
     .nav {
-        display: none;
+        width: 100%;
+        height: 100%;
+        padding-top: 75px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 1;
+
+        overflow: auto;
+        background-color: rgba(0,0,0,.9);
+
+        transition: all .3s linear;
+    }
+
+    .nav.active {
+        top: 0;
+    }
+
+    .nav__link {
+        padding-left: 0;
+        margin-bottom: 2rem;
+        font-size: 1.75rem;
+    }
+
+    /* BTN */
+
+    .btn {
+        font-size: 1.75rem;
+    }
+
+    .btn--nav {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .btn--red, .btn--form, .btn--dark {
+        font-size: .93rem;
+    }
+
+    .btn--social {
+        font-size: .8rem;
     }
 
     .burger {
