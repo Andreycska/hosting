@@ -33,7 +33,7 @@
                     <a class="nav__link" href="#" data-scroll="#features">features</a>
                     <a class="nav__link" href="#" data-scroll="#testimonials">testimonials</a>
                     <a class="nav__link" href="#" data-scroll="#contacts">contacts</a>
-                    <a class="btn btn--nav" href="#">Login</a>
+                    <a class="btn btn--nav" href="#" data-modal>Login</a>
                 </nav><!--/.NAV-->
 
                 <button class="burger" type="menu" id="burger">
@@ -608,6 +608,36 @@
         </div><!--/.CONTAINER-->
 
     </footer><!--/.FOOTER-->
+
+    <!-- MODAL -->
+
+    <div class="modal">
+        <div class="modal__work">
+
+            <button class="modal__close" type="button" data-close>X</button>
+
+            <div class="modal__content">
+                <h2 class="modal__title">Enter</h2>
+
+                <form class="modal__form" action="#" method="GET">
+
+                    <div class="modal__group">
+                        <label class="modal__label" for="login" name="login">Login</label>
+                        <input class="modal__input" type="name" name="login" id="login" placeholder="Enter your login">
+                    </div>
+
+                    <div class="modal__group">
+                        <label class="modal__label" for="password" name="password">Password</label>
+                        <input class="modal__input" type="password" id="password" name="password" placeholder="Enter your password">
+                    </div>
+
+                    <button class="btn btn--social btn--modal" type="submit">Enter</button>
+
+                </form>
+            </div>
+
+        </div><!--/.MODAL__WORK-->
+    </div><!--/.MODAL-->
 
 </div><!--/.PAGE-->
 
